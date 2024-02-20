@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tom Scott Smith</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .content {
+            margin: 15px;
+        } 
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to Tom Scott Smith's Website</h1>
+    </div>
+    <div class="content">
+        <p id="greeting"><b>Hello nadim,tannima ami jani tomrai ak matro ai Website sobar age visit korba thanks for visiting my web.</b></p><br><hr>
+        <center><img src="d:\Download\website a aiso tomra.jpg" alt="" width="600"></center>
+        <link rel="stylesheet" href="style.css">
+        <h3>to bolo ai website ta kemon hoyece valo naki mondo.</h3>
+    </div>
+    <script>
+        window.onload = function() {
+            var greeting = document.getElementById('greeting');
+            var date = new Date();
+            var hours = date.getHours();
+            if (hours < 12) {
+                greeting.innerHTML += ' Good morning!';
+            } else if (hours < 18) {
+                greeting.innerHTML += ' Good afternoon!';
+            } else {
+                greeting.innerHTML += ' Good evening!';
+            }
+        };
+    </script>
+</body>
+</html>
